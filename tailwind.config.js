@@ -1,20 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
+        'luxury-black': '#0a0a0a',
         'luxury-gold': '#fbbf24',
-        'luxury-silver': '#e2e8f0',
-        'luxury-black': '#0f172a',
-        'luxury-white': '#f8fafc',
+        'luxury-gold-dark': '#f59e0b',
+        'luxury-gold-darker': '#d97706',
       },
       fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'playfair': ['Playfair Display', 'serif'],
       },
     },
   },
